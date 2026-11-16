@@ -1,0 +1,25 @@
+{
+  "name": "my-memo-mcp-step2-remote",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "http": "node --import tsx src/http.ts",
+    "verify:http": "node --import tsx scripts/verify-http.ts",
+    "worker:dev": "wrangler dev --local",
+    "worker:db:init": "wrangler d1 migrations apply my-memo-db --local",
+    "check:types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/node": "2.1.2",
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261023.1",
+    "@types/node": "^24.0.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "wrangler": "4.156.0"
+  }
+}

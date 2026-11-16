@@ -1,0 +1,15 @@
+{
+  "name": "my-memo-mcp",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-22",
+  "vars": {
+    "EXPECTED_HOSTNAME": "127.0.0.1"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my-memo-db",
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ]
+}

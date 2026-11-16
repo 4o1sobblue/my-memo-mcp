@@ -1,0 +1,5 @@
+{
+  "name": "my-memo-mcp-samples",
+  "private": true,
+  "workspaces": ["step1-stdio", "step2-remote", "step3-oauth"]
+}

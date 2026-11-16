@@ -1,0 +1,31 @@
+{
+  "compatibility_date": "2026-10-22",
+  "env": {
+    "oauth": {
+      "name": "my-memo-mcp-oauth",
+      "main": "src/oauth-worker.ts",
+      "compatibility_flags": [
+        "global_fetch_strictly_public"
+      ],
+      "vars": {
+        "EXPECTED_HOSTNAME": "my-memo-mcp-oauth.<YOUR_WORKERS_SUBDOMAIN>.workers.dev",
+        "RESOURCE_URL": "https://my-memo-mcp-oauth.<YOUR_WORKERS_SUBDOMAIN>.workers.dev/mcp",
+        "GITHUB_CLIENT_ID": "<YOUR_GITHUB_OAUTH_APP_CLIENT_ID>",
+        "ALLOWED_GITHUB_USER_ID": "<YOUR_NUMERIC_GITHUB_USER_ID>"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "oauth-my-memo-mcp",
+          "database_id": "<OAUTH_D1_DATABASE_ID>"
+        }
+      ],
+      "kv_namespaces": [
+        {
+          "binding": "OAUTH_KV",
+          "id": "<OAUTH_KV_NAMESPACE_ID>"
+        }
+      ]
+    }
+  }
+}

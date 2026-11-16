@@ -1,0 +1,20 @@
+{
+  "name": "my-memo-mcp-step1-stdio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stdio": "node --import tsx src/stdio.ts",
+    "verify:stdio": "node --import tsx scripts/verify-stdio.ts",
+    "check:types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
