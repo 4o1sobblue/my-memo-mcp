@@ -16,7 +16,7 @@
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "oauth-my-memo-mcp",
+          "database_name": "my-memo-mcp-oauth",
           "database_id": "<OAUTH_D1_DATABASE_ID>"
         }
       ],
